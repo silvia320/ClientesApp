@@ -1,0 +1,9 @@
+@model ClientesApp.Application.Dtos.ClienteDto
+@{ ViewData["Title"] = "Eliminar cliente"; }
+
+<h2>Eliminar cliente</h2>
+<p>¿Seguro que quieres eliminar a <strong>@Model.Nombres @Model.Apellidos</strong> (cédula @Model.Cedula)?</p>
+<form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+    <button class="btn btn-danger" type="submit">Eliminar</button>
+    <a class="btn btn-link" asp-action="Index">Cancelar</a>
+</form>

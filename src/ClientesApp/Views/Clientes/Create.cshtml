@@ -1,0 +1,9 @@
+@model ClientesApp.Application.Dtos.ClienteDto
+@{ ViewData["Title"] = "Nuevo cliente"; }
+
+<h2>Nuevo cliente</h2>
+<form asp-action="Create" method="post">
+    <partial name="_Form" model="Model" />
+    <button class="btn btn-primary" type="submit">Guardar</button>
+    <a class="btn btn-link" asp-action="Index">Cancelar</a>
+</form>

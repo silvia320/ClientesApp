@@ -1,0 +1,37 @@
+﻿@{ ViewData["Title"] = "Inicio"; }
+
+<div class="hero text-center mb-5">
+    <h1 class="display-4">Gestión de Clientes</h1>
+    <p class="lead col-lg-7 mx-auto mb-4">
+      Ensayo de CRUD MVC con principios SOLID y scaffolding, usando ASP.NET Core 10, Entity Framework Core 10, PostgreSQL, FluentValidation y Bootstrap 5.
+   
+    </p>
+    <div class="d-flex gap-2 justify-content-center flex-wrap">
+        <a class="btn btn-light btn-lg px-4" asp-controller="Clientes" asp-action="Index">Ver clientes</a>
+        <a class="btn btn-outline-light btn-lg px-4" asp-controller="Clientes" asp-action="Create">Nuevo cliente</a>
+    </div>
+</div>
+
+<div class="row g-4 text-center">
+    <div class="col-md-4">
+        <div class="card feature-card h-100"><div class="card-body p-4">
+            <div class="feature-icon">&#128221;</div>
+            <h5 class="card-title">Registro completo</h5>
+            <p class="card-text text-muted">Diez campos datos personales.</p>
+        </div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card feature-card h-100"><div class="card-body p-4">
+            <div class="feature-icon">&#9989;</div>
+            <h5 class="card-title">Validación</h5>
+            <p class="card-text text-muted">Cédula y correo únicos, mayoría de edad y datos obligatorios.</p>
+        </div></div>
+    </div>
+    <div class="col-md-4">
+        <div class="card feature-card h-100"><div class="card-body p-4">
+            <div class="feature-icon">&#128451;</div>
+            <h5 class="card-title">Catálogos</h5>
+            <p class="card-text text-muted">Ciudades, tipos de cliente y géneros vienen de la base de datos.</p>
+        </div></div>
+    </div>
+</div>
